@@ -1,0 +1,15 @@
+# deps / build
+node_modules/
+.vercel/
+dist/
+
+# env / secrets
+.env
+.env.local
+.env*.local
+
+# os / editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Content Helper Community — Elite Creator Network</title>
+<meta name="description" content="An exclusive network connecting content creators, developers, artists, editors and VIPs. 150M+ combined reach." />
+<meta name="theme-color" content="#08070a" />
+<link rel="icon" href="assets/favicon.png" />
+<link rel="apple-touch-icon" href="assets/chc-logo.png" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Content Helper Community — Elite Creator Network" />
+<meta property="og:description" content="Exclusive network of creators, devs, artists, editors and VIPs. 150M+ combined reach." />
+<meta property="og:image" content="assets/chc-logo.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Content Helper Community" />
+<meta name="twitter:description" content="Exclusive network of creators, devs, artists, editors and VIPs. 150M+ combined reach." />
+<meta name="twitter:image" content="assets/chc-logo.png" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="css/styles.css" />
+</head><body>
+<!-- CHC CURTAIN INTRO -->
+<div id="curtainIntro">
+  <div class="curtain left"></div><div class="curtain right"></div>
+  <div class="seam"></div>
+  <div class="sealWrap"><div class="seal"><span class="ring2"></span><img src="assets/chc-logo.png" alt="CHC"></div></div>
+  <button id="cSkip" type="button">SKIP &#10022;</button>
+  <script>
+  (function(){
+    var ov=document.getElementById('curtainIntro'); if(!ov) return;
+    window.__introPending=true;
+    var seal=ov.querySelector('.seal'), sk=document.getElementById('cSkip');
+    var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+    document.documentElement.style.overflow='hidden';
+    var done=false;
+    function finish(){
+      if(done) return; done=true;
+      window.__introPending=false;
+      try{window.__playMusic&&window.__playMusic();}catch(_){}
+      ov.classList.add('open');
+      try{window.__startHero&&window.__startHero();}catch(_){}
+      setTimeout(function(){ ov.classList.add('gone'); document.documentElement.style.overflow='';
+        setTimeout(function(){ if(ov.parentNode) ov.parentNode.removeChild(ov); }, 480); }, reduce?0:1050);
+    }
+    sk&&sk.addEventListener('click',finish);
+    if(reduce){ finish(); return; }
+    seal.classList.add('in');
+    setTimeout(function(){ seal.classList.remove('in'); seal.classList.add('vibe'); }, 520);
+    setTimeout(function(){ seal.classList.remove('vibe'); seal.classList.add('fall'); }, 1420);
+    setTimeout(finish, 1980);
+  })();
+  </script>
+</div>
+<!-- /CHC CURTAIN INTRO -->
+
+<svg width="0" height="0" style="position:absolute"><filter id="rough">
+  <feTurbulence type="fractalNoise" baseFrequency="0.02 0.045" numOctaves="2" result="n"/>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="6"/></filter></svg>
+
+<canvas id="c"></canvas>
+<div class="glow"></div><div class="grain"></div>
+
+<nav>
+  <a class="brand" href="#top"><img class="logo" src="assets/chc-logo.webp" alt="" />CHC<span class="dot">&#9670;</span></a>
+  <div class="navlinks">
+    <a href="#about">About</a><a href="#members">Members</a><a href="#contact">Contact</a>
+  </div>
+  <a class="btn btn-gold" href="https://discord.gg/PEcAFY3EZF" target="_blank" rel="noopener">Apply to join</a>
+</nav>
+
+<span id="top"></span>
+
+<header id="hero">
+  <div id="spark"><svg viewBox="0 0 100 100"><g fill="var(--gold)">
+    <use href="#ray"/><g transform="rotate(45 50 50)"><use href="#ray"/></g>
+    <g transform="rotate(90 50 50)"><use href="#ray"/></g><g transform="rotate(135 50 50)"><use href="#ray"/></g>
+  </g><path id="ray" d="M50 8 L56 50 L50 92 L44 50 Z"/></svg></div>
+
+  <div id="marker"><span class="scrawl" id="m1">INVITE</span><span class="scrawl" id="m2">ONLY</span></div>
+
+  <div class="hero-inner" id="heroInner">
+    <div class="eyebrow">Exclusive Network</div>
+    <h1 class="hero-title gold-text">CONTENT<br>HELPER<br>COMMUNITY</h1>
+    <p class="hero-sub">A private network for elite content creators, developers, artists, editors and VIPs — built around collaboration, trust, and high-quality work.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="https://discord.gg/PEcAFY3EZF" target="_blank" rel="noopener">Apply to join</a>
+      <a class="btn btn-ghost" href="#about">Explore &rarr;</a>
+    </div>
+  </div>
+</header>
+
+<section class="block" id="stats">
+  <div class="wrap"><div class="stats-grid">
+    <div class="stat"><div class="num gold-text" data-count="150" data-suffix="M+">0</div><div class="lbl">Combined Subscribers</div></div>
+    <div class="stat"><div class="num gold-text" data-count="350" data-suffix="+">0</div><div class="lbl">Vetted Members</div></div>
+    <div class="stat"><div class="num gold-text" data-count="9" data-suffix="+">0</div><div class="lbl">Featured Creators</div></div>
+    <div class="stat"><div class="num gold-text" data-static="24/7">24/7</div><div class="lbl">Active Network</div></div>
+  </div></div>
+</section>
+
+<section class="block sec" id="about">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="eyebrow">About CHC</div>
+      <h2>Not just creators —<br><span class="gold-text shimmer">an exclusive circle.</span></h2>
+      <p>CHC is a content creation community focused on connecting creators with reliable, trustworthy talent. Whether you&rsquo;re a creator, artist, editor, developer or VIP, our server is built around collaboration, networking, and helping ambitious people work together on high-quality projects.</p>
+    </div>
+    <div class="cards">
+      <div class="card" data-reveal><div class="di">&#9670;</div><h3>CREATORS</h3><p>YouTubers, streamers and short-form leaders shaping culture.</p></div>
+      <div class="card" data-reveal style="transition-delay:.06s"><div class="di">&#9670;</div><h3>DEVELOPERS</h3><p>Engineers building bots, tools and pipelines for the creator economy.</p></div>
+      <div class="card" data-reveal style="transition-delay:.12s"><div class="di">&#9670;</div><h3>ARTISTS &amp; EDITORS</h3><p>Designers, thumbnail artists and editors with proven taste.</p></div>
+      <div class="card" data-reveal style="transition-delay:.18s"><div class="di">&#9670;</div><h3>VIPS</h3><p>Trusted operators, managers and partners who keep things moving.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block sec" id="members">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="eyebrow">Featured Creators</div>
+      <h2 class="gold-text shimmer">Trusted by creators with reach.</h2>
+      <p>A roster with 150M+ combined subscribers &mdash; and growing every week.</p>
+    </div>
+    <div class="marquee" data-reveal><div class="marquee-track" id="marquee"></div></div>
+    <div class="creator-grid" id="creatorGrid" data-reveal></div>
+    <p class="roster" data-reveal>&hellip;and a private roster of developers, artists, editors and VIPs.</p>
+  </div>
+</section>
+
+<section class="block sec" id="cta">
+  <div class="wrap" data-reveal>
+    <div class="eyebrow">Join CHC</div>
+    <h2 class="gold-text shimmer" style="margin-top:16px">Think you belong here?</h2>
+    <p>Membership is invite-based. Reach out and tell us what you&rsquo;re working on.</p>
+    <a class="btn btn-gold" href="https://discord.gg/PEcAFY3EZF" target="_blank" rel="noopener" style="padding:15px 30px;font-size:15px">Join the Discord</a>
+  </div>
+</section>
+
+<footer id="contact"><div class="wrap"><div class="foot">
+  <a class="brand" href="#top" style="font-size:18px"><img class="logo" src="assets/chc-logo.webp" alt="" />CHC<span class="dot">&#9670;</span></a>
+  <div>&copy; 2026 Content Helper Community</div>
+  <a href="mailto:contactchcbusiness@gmail.com">contactchcbusiness@gmail.com</a>
+</div></div></footer>
+
+<div id="music" title="Toggle music">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+</div>
+
+<div id="boot"><div class="ring"></div></div>
+
+<script type="importmap">
+{ "imports": {
+  "three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+}}
+</script>
+<script type="module" src="js/main.js"></script>
+</body></html>
