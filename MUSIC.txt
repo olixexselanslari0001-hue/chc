@@ -1,0 +1,3 @@
+Background music plays from assets/music.mp3 (toggle = bottom-right button).
+Add your own no-vocals track here as: assets/music.mp3
+(e.g. an instrumental of "Brooklyn Blood Pop!" — provide your own licensed file.)
