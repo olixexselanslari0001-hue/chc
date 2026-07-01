@@ -143,6 +143,7 @@ else if(!window.__introPending)window.__startHero();
 /* ---- creators: LIVE subs via /api/subs (YouTube), embedded fallback ---- */
 const FALLBACK_CREATORS=[
   {name:'ZND',                  subs:'10.5M', url:'https://www.youtube.com/@zndshort'},
+  {name:'Zeus Shorts',         subs:'10.4M', url:'https://www.youtube.com/@zeusshort'},
   {name:'the same Wednesday',   subs:'10.3M', url:'https://www.youtube.com/@fake_ortega'},
   {name:'Cheesymembey',         subs:'6.91M', url:'https://www.youtube.com/@cheesymembey'},
   {name:'RealBacon',            subs:'4.89M', url:'https://www.youtube.com/@realbaccon'},
@@ -150,16 +151,17 @@ const FALLBACK_CREATORS=[
   {name:'SkyFly Facts',         subs:'4.72M', url:'https://www.youtube.com/@skyflyfacts'},
   {name:'Plaza',                subs:'3.88M', url:'https://www.youtube.com/@plazamc'},
   {name:'Tiger Now',            subs:'3.21M', url:'https://www.youtube.com/@tigernows'},
+  {name:'Koopekool',            subs:'3.12M', url:'https://www.youtube.com/@koopekool'},
+  {name:'Allstar',              subs:'1.83M', url:'https://www.youtube.com/@AllStar'},
   {name:'Explorer Elizabeth',   subs:'1.69M', url:'https://www.youtube.com/@elizabethroblox'},
   {name:'RichGardner',          subs:'1.01M', url:'https://www.youtube.com/@torichblox'},
   {name:'Aixory',               subs:'727K',  url:'https://www.youtube.com/@aixoryistaken'},
+  {name:'Koopekul',             subs:'659K',  url:'https://www.youtube.com/@koopekul'},
   {name:'DonFuria Minecraft 1', subs:'622K',  url:'https://www.youtube.com/@donfuriaminecraft1'},
   {name:'Crewzi',               subs:'541K',  url:'https://www.youtube.com/@crewzi'},
   {name:'ChickenMan',           subs:'372K',  url:'https://www.youtube.com/@chickenmanrblx'},
   {name:'BabyBacon',            subs:'259K',  url:'https://www.youtube.com/@babybaconyt'},
   {name:'Jairai',               subs:'113K',  url:'https://www.youtube.com/@jairaiyt'},
-  {name:'Xory Studios',         subs:'38.5K', url:'https://www.youtube.com/@xorystudios'},
-  {name:'Stanky Boi',           subs:'18.1K', url:'https://www.youtube.com/@stankyboikins'},
 ];
 const initials=n=>{const w=n.trim().split(/\s+/);return (w.length>1?w[0][0]+w[1][0]:n.slice(0,2)).toUpperCase();};
 const slug=n=>n.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
